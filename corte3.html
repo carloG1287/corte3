@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="taller.css">
+  <title>Registro de Mantenimiento de Vehículos</title>
+</head>
+<body>
+  <h1>Taller Jhon Doe & Doe</h1>
+  <div id="correction">
+    <form id="vehicleForm">
+        <label for="firstName">Nombre:</label>
+        <input type="text" id="firstName" required>
+        <br>
+        <label for="lastName">Apellido:</label>
+        <input type="text" id="lastName" required>
+        <br>
+        <label for="cedula">Cédula o C.I:</label>
+        <input type="number" id="cedula" required>
+        <br>
+        <label for="vehicleBrand">Marca del Vehículo:</label>
+        <input type="text" id="vehicleBrand" required>
+        <br>
+        <label for="vehicleModel">Modelo del Vehículo:</label>
+        <input type="text" id="vehicleModel" required>
+        <br>
+        <label for="maintenanceType">Tipo de Mantenimiento:</label>
+        <select id="maintenanceType" required>
+          <option value="Correctivo">Correctivo</option>
+          <option value="Preventivo">Preventivo</option>
+        </select>
+        <br>
+        <button type="submit">Guardar Mantenimiento</button>
+      </form>
+  <div id="maintenanceLog">
+    <!-- Aquí se mostrará el registro de mantenimiento -->
+  </div>
+    </div>
+  <script src="app.js"></script>
+</body>
+</html>
